@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Atendimentos JR OdontoPrime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>JR OdontoPrime</h2>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="active"><span class="icon">💬</span>Conversas</li>
+          <li><span class="icon">📅</span>Agendamentos</li>
+          <li><span class="icon">👤</span>Pacientes</li>
+          <li><span class="icon">⚙</span>Configurações</li>
+          <li><span class="icon">📊</span>Relatórios</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h1 class="titulo">Painel de Atendimentos JR OdontoPrime</h1>
+
+      <div class="content-area">
+        <!-- Lista de pacientes -->
+        <section class="patient-list">
+          <div class="patient-card">
+            <div class="info">
+              <strong>João Silva</strong>
+              <p>(14)-8896-1234</p>
+              <p>Gostaria de avaliação...</p>
+            </div>
+            <span class="status andamento">🟡 Em andamento</span>
+          </div>
+
+          <div class="patient-card">
+            <div class="info">
+              <strong>Maria Oliveira</strong>
+              <p>(14)-98888-5678</p>
+              <p>Pode ser terça às 9h</p>
+            </div>
+            <span class="status confirmado">🟢 Confirmado</span>
+          </div>
+        </section>
+
+        <!-- Chat -->
+        <section class="chat">
+          <div class="message received">
+            <span class="time">10:40</span>
+            <p>Quero agendar uma avaliação.</p>
+          </div>
+
+          <div class="message sent">
+            <span class="time">10:41</span>
+            <p>Bem-vindo à JR OdontoPrime! Em que posso te ajudar?</p>
+          </div>
+
+          <div class="message received">
+            <span class="time">10:49</span>
+            <p>Gostaria de uma avaliação para dor de dente</p>
+          </div>
+
+          <div class="message sent">
+            <span class="time">10:43</span>
+            <p>Tudo bem! Qual o seu nome completo e telefone, por favor?</p>
+          </div>
+        </section>
+
+        <!-- Ficha do paciente -->
+        <section class="patient-info">
+          <label>Nome</label>
+          <input type="text" value="João Silva">
+
+          <label>Telefone</label>
+          <input type="text" value="(14) 9996-1234">
+
+          <label>Procedimento desejado</label>
+          <input type="text" value="Avaliação">
+
+          <label>Status</label>
+          <input type="text" value="Em andamento">
+
+          <label>Repassado para recepção?</label>
+         <input type="text" value="Sim (via IA)" readonly>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
